@@ -11,4 +11,5 @@
         <item name="android:padding">@dimen/general_padding</item>
         <item name="android:textSize">18sp</item>
     </style>
+
 </resources>

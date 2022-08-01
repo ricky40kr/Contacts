@@ -30,17 +30,6 @@ public abstract class ContactRoomDatabase extends RoomDatabase {
                     databaseWriteExecutor.execute(() -> {
                         ContactDao contactDao = INSTANCE.contactDao();
                         contactDao.deleteAll();
-
-                        Contact contact = new Contact("Paulo", "Teacher");
-                        contactDao.insert(contact);
-
-                        contact = new Contact("Bond", "Spy");
-                        contactDao.insert(contact);
-
-                        contact = new Contact("Bruce", "Fighter");
-                        contactDao.insert(contact);
-
-
                     });
                 }
             };

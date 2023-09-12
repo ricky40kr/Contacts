@@ -5,6 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bawp.contactroom.adapter.RecyclerViewAdapter;
 import com.bawp.contactroom.model.Contact;
 import com.bawp.contactroom.model.ContactViewModel;
@@ -13,14 +20,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 import java.util.Objects;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity implements RecyclerViewAdapter.OnContactClickListener {
 
